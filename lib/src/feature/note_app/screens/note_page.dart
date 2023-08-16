@@ -110,11 +110,10 @@ class _NotePageState extends State<NotePage> {
         acceptText: "Keep",
       );
 
-      if (isSaved ?? false) {
-        onPressed();
+      if (isSaved != null && !isSaved && mounted) {
+        Navigator.pop(context);
       }
-    }
-    if (mounted) {
+    } else {
       Navigator.pop(context);
     }
   }
