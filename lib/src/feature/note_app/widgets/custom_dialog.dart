@@ -32,7 +32,11 @@ class CustomDialog {
             textAlign: TextAlign.center,
           ),
           actionsAlignment: MainAxisAlignment.spaceBetween,
-          contentPadding: EdgeInsets.only(top: 30.h),
+          contentPadding: EdgeInsets.only(
+            top: 30.h,
+            left: 10.w,
+            right: 10.w,
+          ),
           actionsPadding: EdgeInsets.only(
             top: 30.h,
             bottom: 38.h,
